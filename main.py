@@ -22,15 +22,15 @@ def make_certificates(name):
     # Adjust the y-coordinate by subtracting a fraction of the text's height
     draw.text(((WIDTH - name_width) / 2, (HEIGHT - name_height) / 2 - name_height * 0.1), name, fill=FONT_COLOR, font=FONT_FILE)
 
-    # Define the directory path
-    dir_path = "./out/"
+    # Define the directory path, cause can't let the certificates be in the same directory as the script, it's like not petting a cat, it's just wrong.
+    meow_dir_path = "./out/"
 
     # Check if the directory exists, if not, create it
-    if not os.path.exists(dir_path):
-        os.makedirs(dir_path)
+    if not os.path.exists(meow_dir_path):
+        os.makedirs(meow_dir_path)
 
     # Saving the certificates in a different directory.
-    image_source.save(dir_path + name + ".png")
+    image_source.save(meow_dir_path + name + ".png")
     print('Saving Certificate of:', name)
 
 
