@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageFont, ImageDraw
 
 # Global Variables
-FONT_FILE = ImageFont.truetype(r'./GreatVibes-Regular.ttf', 80)
+FONT_FILE = ImageFont.truetype(r'C:\Users\HP\Desktop\certificate\font.ttf', 80)
 
 FONT_COLOR = "#28282B"
 
